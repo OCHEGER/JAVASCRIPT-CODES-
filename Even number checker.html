@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Even Number Checker</title>
+<body>
+    <script type="text/javascript">
+        // Prompt the user to enter a value
+        var userInput = prompt("Please enter a number:");
+        
+        // Convert the input to a number
+        var number = Number(userInput);
+
+        // Check if the number is even
+        if (isNaN(number)) {
+            alert("That's not a valid number.");
+        } else if (number % 2 === 0) {
+            alert("The number " + number + " is even.");
+        } else {
+            alert("The number " + number + " is odd.");
+        }
+    </script>
+</body>
+</html>
