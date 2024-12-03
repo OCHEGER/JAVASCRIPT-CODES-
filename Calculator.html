@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Age Calculator</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // Step i) Accept the user to input his or her Name
+        var userName = prompt("Please enter your name:");
+        
+        // Step ii) Accept the user to input his Date of Birth
+        var userDOB = prompt("Please enter your date of birth (YYYY-MM-DD):");
+        
+        // Step iii) Accept the user to submit the current year
+        var currentYear = prompt("Please enter the current year:");
+
+        // Step iv) Calculate the Age of the person
+        var birthYear = new Date(userDOB).getFullYear();
+        var age = currentYear - birthYear;
+
+        // Step v) Print out the welcome message and the age of the person
+        document.write(`Dear ${userName}, you are ${age} years old`);
+    </script>
+</body>
+</html>
